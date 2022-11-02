@@ -1,23 +1,19 @@
-/*
- * 1-factorial.c
- * Auth: sam
- */
-
 #include "main.h"
 
 /**
  * factorial - Returns the factorial of a given number
- * @n: the number to find the factorial of
- * Return: if n > 0 - the factorial of n
- * if n < 0 - 1 to indicate an error
+ * @n: pointer block of memory to fill
+ * Return: factorial
  */
 int factorial(int n)
 {
-	int result = n;
+	if (n == 0) /*Base condition*/
+		return (1);
 
-	if (n < 0)
+	else if (n < 0) /*Base condition*/
 		return (-1);
 
-	else if (n >= 0 && n <= 1)
-		return (1);
+	else
+
+	return (n * factorial(n - 1)); /*Recursive call*/
 }
