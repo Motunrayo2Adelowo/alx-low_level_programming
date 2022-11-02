@@ -1,6 +1,6 @@
 /*
  * file: 2-strlen_recursion.c
- * Auth: sam
+ * Auth: smone
  */
 
 #include "main.h"
