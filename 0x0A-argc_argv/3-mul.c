@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,7 +6,7 @@
  * main - multiplies two numbers
  * @argc: count arguements
  * @argv: arguements
- * Return: On success 0, else 1
+ * Return: 0 if true, 1 if false
  */
 int main(int argc, char *argv[])
 {
