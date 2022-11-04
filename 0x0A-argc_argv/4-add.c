@@ -26,3 +26,37 @@ int check_num(char *str)
 
 	return (1);
 }
+
+/**
+ * main - print the name of the program
+ * @argc: count arguement
+ * @argv: arguement
+ * Return: on success 0
+ */
+int main(int argc, char *argv[])
+{
+	int count;
+	int st_to_int;
+	int sum = 0;
+
+	count = 1;
+
+	while (count < argc)
+	{
+		if (check_num(argv[count]))
+		{
+			st_to_int = atoi(argv[count]);
+			sum += st_to_int;
+		}
+
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		count++;
+	}
+	printf("%d\n", sum);
+
+	return (0);
+}
