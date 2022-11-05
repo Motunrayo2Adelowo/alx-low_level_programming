@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	total = atoi(argc[1]);
+	total = atoi(argv[1]);
 
 	if (total <= 0)
 	{
